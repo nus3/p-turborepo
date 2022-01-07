@@ -1,0 +1,11 @@
+{
+  "name": "p-turborepo",
+  "version": "0.0.0",
+  "author": "nus3 <hadayota33@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  }
+}
