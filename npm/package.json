@@ -32,5 +32,9 @@
   },
   "workspaces": [
     "packages/nus3-config"
-  ]
+  ],
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "turbo": "^1.0.24"
+  }
 }
