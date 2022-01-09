@@ -1,0 +1,36 @@
+{
+  "name": "p-turborepo-yarn",
+  "version": "0.0.0",
+  "author": "nus3 <hadayota33@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "turbo": {
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          "dist/**",
+          ".next/**"
+        ]
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "workspaces": [
+    "packages/nus3-config"
+  ]
+}

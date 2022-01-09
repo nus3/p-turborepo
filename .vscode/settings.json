@@ -14,6 +14,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
-  "cSpell.words": ["nextjs", "vite"],
+  "cSpell.words": ["nextjs", "turborepo", "vite"],
   "css.validate": false
 }

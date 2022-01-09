@@ -1,0 +1,16 @@
+{
+  "name": "nus3-config",
+  "version": "0.0.0",
+  "author": "nus3 <hadayota33@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "eslint-preset.js",
+    "tsconfig.base.json",
+    "tsconfig.nextjs.json",
+    "tsconfig.react-library.json"
+  ],
+  "dependencies": {
+    "eslint-config-next": "12.0.7",
+    "eslint-config-prettier": "8.3.0"
+  }
+}
