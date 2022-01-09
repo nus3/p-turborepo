@@ -38,6 +38,7 @@
   "workspaces": [
     "packages/nus3-config",
     "packages/nus3-ui",
+    "packages/nus3-button",
     "apps/nus3-a"
   ],
   "devDependencies": {
