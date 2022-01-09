@@ -31,7 +31,9 @@
     "node": ">=14.0.0"
   },
   "workspaces": [
-    "packages/nus3-config"
+    "packages/nus3-config",
+    "packages/nus3-ui",
+    "apps/nus3-a"
   ],
   "devDependencies": {
     "prettier": "^2.5.1",
