@@ -1,0 +1,38 @@
+{
+  "name": "@nus3/example-button",
+  "version": "0.0.1",
+  "author": "nus3 <hadayota33@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/nus3-example-button.umd.js",
+  "module": "./dist/nus3-example-button.es.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "vite --port 3002",
+    "build": "vite build && tsc -p ./tsconfig.build.json",
+    "preview": "vite preview"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/nus3-example-button.es.js",
+      "require": "./dist/nus3-example-button.umd.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.38",
+    "@types/react-dom": "17.0.11",
+    "@vitejs/plugin-react": "1.1.4",
+    "nus3-config": "*",
+    "typescript": "4.5.4",
+    "vite": "2.7.10"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  }
+}
