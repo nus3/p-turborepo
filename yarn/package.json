@@ -13,6 +13,7 @@
     "dev": "turbo run dev --parallel",
     "dev:yarn": "yarn workspace nus3-a run dev",
     "dev-all:yarn": "yarn workspaces run dev",
+    "build-all:yarn": "yarn workspaces run build",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
