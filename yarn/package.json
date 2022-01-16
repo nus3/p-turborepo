@@ -15,7 +15,8 @@
     "dev-all:yarn": "yarn workspaces run dev",
     "build-all:yarn": "yarn workspaces run build",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "deploy": "turbo run deploy"
   },
   "devDependencies": {
     "prettier": "2.5.1",
@@ -32,8 +33,18 @@
           ".next/**"
         ]
       },
-      "lint": {
-        "outputs": []
+      "test": {
+        "dependsOn": [
+          "build"
+        ]
+      },
+      "lint": {},
+      "deploy": {
+        "dependsOn": [
+          "build",
+          "test",
+          "lint"
+        ]
       },
       "dev": {
         "cache": false
